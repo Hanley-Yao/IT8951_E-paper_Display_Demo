@@ -1,0 +1,16 @@
+在多进程处理后再次运行任何需要PIL模块的程序读取图像都会有如下报错
+
+Traceback (most recent call last):
+  File "/root/Desktop/epd_test/test_IT8951.py", line 49, in <module>
+    display_image_8bpp(display)
+  File "/root/Desktop/epd_test/test_IT8951.py", line 43, in display_image_8bpp
+    img.thumbnail(dims)
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 2132, in thumbnail
+    im = self.resize(size, resample)
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 1801, in resize
+    im = im.resize(size, resample, box)
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 1806, in resize
+    return self._new(self.im.resize(size, resample, box))
+ValueError: height and width must be > 0
+
+我能保证图片在多进程之前都可以正常读取
