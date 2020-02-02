@@ -16,7 +16,8 @@
     然后自己看微雪的教程把屏幕调到能正常显示(http://www.waveshare.net/wiki/9.7inch_e-Paper_HAT)
     微雪的程序“./epd”这步如果报错bcm总线错误就在开头加sudo
     跑完微雪的代码以后使用我的程序
-    你需要保证你的树莓派可以正常运行Python3以及正确安装了opencv等库(不需要编译安装树莓派4b不支持oepncv4安装时注意一下具体方法百度去QwQ)
+    你需要保证你的树莓派可以正常运行Python3以及正确安装了opencv等库
+    不需要编译安装树莓派4b不支持oepncv4安装时注意一下具体方法百度去QwQ
     使用CSI采集需要
     在命令行输入以下命令，这个命令的意思是用nano编辑器打开modules这个文件：
         sudo nano /etc/modules
