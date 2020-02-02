@@ -24,7 +24,8 @@
     在这个文件末尾添加一行
         bcm2835-v4l2
     然后打开树莓派的摄像头，SPI，12C等接口
-    然后需要按照你屏幕软排上的电压修改一下程序里面display = AutoEPDDisplay(vcom=-1.75)的值
+    其次克隆库到本地打开
+    接着需要按照你屏幕软排上的电压修改一下程序里面display = AutoEPDDisplay(vcom=-1.75)的值
     最后如果你手上有A/D模块(我用的是PCF8591自带电位器)(必须在root模式下运行不然会出现SPI无法访问等报错)
         sudo python3 test_IT8951.py
     如果手上没有A/D模块那也没有关系运行
