@@ -6,8 +6,8 @@
     注意！！！树莓派4b需要用bcm2835-1.60
     链接：http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
     编译安装：
-        tar zxvf bcm2835-1.xx.tar.gz
-        cd bcm2835-1.xx
+        tar zxvf bcm2835-1.60.tar.gz
+        cd bcm2835-1.60
         ./configure
         make
         sudo make check
