@@ -1,6 +1,6 @@
 # IT8951_E-paprt_Display_Demo
-\<br>将E-paper接入IT8951
-然后通过SPI或者HAT接入树莓派
+    将E-paper接入IT8951
+    然后通过SPI或者HAT接入树莓派
 先按照微雪的方法调通微雪的官方Demo
 也就是安装bcm2835的库
 注意！！！树莓派4b需要用bcm2835-1.60
