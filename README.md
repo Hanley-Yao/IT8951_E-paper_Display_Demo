@@ -1,6 +1,6 @@
 # :(这是一个出自高一学生之手的垃圾项目
 
-
+###### 别问我为啥把所有代码写一个文件里面...因为我不会分开写...别骂我
 
 [[IT8951_E-paper_Display_Demo](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo)]是一个高一学生无聊闲着蛋疼整出来的没用玩意，可使用树莓派+IT8951实现一些没用的功能。
 
