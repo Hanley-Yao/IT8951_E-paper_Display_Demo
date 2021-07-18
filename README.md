@@ -372,8 +372,11 @@ GregDMeyer开发者的IT8951项目属于Python库
 
 ```sh
 git clone https://github.com/GregDMeyer/IT8951
+
 cd IT8951
+
 pip3 install -r requirements.txt
+
 pip3 install ./
 ```
 
@@ -381,8 +384,11 @@ IT8951库中的主要自定义函数用法如下：
 
 ```python
 display.frame_buf.paste([图像],paste_coords)
+
 #  向缓冲区写入图像
+
 display.[刷新模式](constants.DisplayModes[波形模式])
+
 #  将图像缓冲区的图像以定义的模式输出到屏幕
 ```
 
