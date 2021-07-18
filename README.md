@@ -1,8 +1,10 @@
-# :(
 
-# 这是一个出自高一学生之手的垃圾项目
 
-[IT8951_E-paper_Display_Demo](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo)是一个高一学生无聊闲着蛋疼整出来的没用玩意,可使用树莓派+IT8951实现一些没用的功能。
+# :(这是一个出自高一学生之手的垃圾项目
+
+
+
+[[IT8951_E-paper_Display_Demo](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo)]是一个高一学生无聊闲着蛋疼整出来的没用玩意，可使用树莓派+IT8951实现一些没用的功能。
 
 * 使用Pyhon编写
 
@@ -92,7 +94,7 @@
 
 向文件末尾添加如下文本
 
-```config
+```sh
 hdmi_force_hotplug = 1
 
 hemi_group = 2
@@ -136,7 +138,7 @@ dtoverlay = w1-gpio
 
 向文件末尾添加如下文本
 
-```config
+```sh
 i2c-dev
 
 bcm2835-v42
@@ -164,7 +166,7 @@ dtoverlay = w1-gpio
 
 在末尾`exit0`前一行添加如下文本使树莓派在进入系统后自动运行这些命令
 
-```config
+```sh
 modprobe i2c-dev
 
 echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
@@ -186,7 +188,7 @@ hwclock -s
 
 通过安装qrcp后创建`qrcp.config`文件写入如下配置：
 
-```config
+```sh
 {
 
 "fqdn": "", 
@@ -261,7 +263,7 @@ sh /root/qrcp_run.sh &
 
 注：目标文件`rc.local`全部内容如下
 
-```
+```sh
 #!/bin/sh -e
 #
 
@@ -333,7 +335,7 @@ GregDMeyer开发者的IT8951项目属于Python库
 
 在Linux终端安装过程如下：
 
-```
+```sh
 git clone https://github.com/GregDMeyer/IT8951
 cd IT8951
 pip3 install -r requirements.txt
@@ -397,4 +399,5 @@ multiprocessing
 
 ## License
 
-MIT. See [LICENSE](https://github.com/claudiodangelis/qrcp/blob/master/LICENSE).
+MIT. See [LICENSE](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo/blob/master/LICENSE).
+
