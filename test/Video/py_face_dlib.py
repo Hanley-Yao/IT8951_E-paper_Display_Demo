@@ -1,13 +1,16 @@
-import multiprocessing as mp  # ¶à½ø³ÌÖ§³Ö¿â
-import cv2  # Í¼Ïñ´¦Àí¿â
-import dlib  # »úÆ÷Ñ§Ï°¿â
-import RPi.GPIO as GPIO  # Ó²¼şGPIO¿ØÖÆ¿â
 
-GPIO.setwarnings(False)  # ½ûÓÃGPIOÕ¼ÓÃ¾¯¸æ
-GPIO.setmode(GPIO.BCM)  # ÉèÖÃÃüÃû·½Ê½ÎªBCM
-GPIO.setup(26, GPIO.IN)  # ÉèÖÃBCMÃüÃû¹æÔòÏÂµÄ26ºÅGPIOÎªÊäÈëÄ«Ë®
+# ä»£ç æ¥æºäºç½‘ç»œä¾µæƒè¯·è”ç³»åˆ é™¤
 
-def detect_face(frame,value):  # ÈËÁ³¼ì²âº¯Êı»Øµ÷
+import multiprocessing as mp  # å¤šè¿›ç¨‹æ”¯æŒåº“
+import cv2  # å›¾åƒå¤„ç†åº“
+import dlib  # æœºå™¨å­¦ä¹ åº“
+import RPi.GPIO as GPIO  # ç¡¬ä»¶GPIOæ§åˆ¶åº“
+
+GPIO.setwarnings(False)  # ç¦ç”¨GPIOå ç”¨è­¦å‘Š
+GPIO.setmode(GPIO.BCM)  # è®¾ç½®å‘½åæ–¹å¼ä¸ºBCM
+GPIO.setup(26, GPIO.IN)  # è®¾ç½®BCMå‘½åè§„åˆ™ä¸‹çš„26å·GPIOä¸ºè¾“å…¥å¢¨æ°´
+
+def detect_face(frame,value):  # äººè„¸æ£€æµ‹å‡½æ•°å›è°ƒ
     img = frame
     dets = detector(img, 1)
     for index, face in enumerate(dets):
@@ -15,8 +18,8 @@ def detect_face(frame,value):  # ÈËÁ³¼ì²âº¯Êı»Øµ÷
         top = face.top()
         right = face.right()
         bottom = face.bottom()
-#ÒòÎªÈç¹ûÃ»ÓĞ¼ì²âµ½Á³£¬ÉÏÃæËÄ¸ö±äÁ¿ÊÇ²»´æÔÚµÄ£¬
-#»á±¨³öUnboundLocalErrorµÄ´íÎó£¬ËùÒÔÒª´¦ÀíÒ»ÏÂ¡£           
+#å› ä¸ºå¦‚æœæ²¡æœ‰æ£€æµ‹åˆ°è„¸ï¼Œä¸Šé¢å››ä¸ªå˜é‡æ˜¯ä¸å­˜åœ¨çš„ï¼Œ
+#ä¼šæŠ¥å‡ºUnboundLocalErrorçš„é”™è¯¯ï¼Œæ‰€ä»¥è¦å¤„ç†ä¸€ä¸‹ã€‚           
     try:
         value[:] = [left,top,right,bottom]
     except UnboundLocalError:
@@ -27,18 +30,18 @@ def draw_line(img,box):
     top = box[1]
     right = box[2]
     bottom = box[3]
-#¸ø´«½øÀ´µÄimg»­¿ò£¬²¢·µ»Ø
+#ç»™ä¼ è¿›æ¥çš„imgç”»æ¡†ï¼Œå¹¶è¿”å›
     cv2.rectangle(img, (left*4, top*4), (right*4, bottom*4), (255, 255, 255), 10)
     return img
 if __name__=='__main__':
 #initial detector and cap
-#Ê÷İ®ÅÉµÄÔËĞĞÄÚ´æÓĞÏŞ£¬ËùÒÔÒª½«²É¼¯µÄÍ¼Æ¬ÏñËØËõĞ¡Ò»Ğ©£¬±ãÓÚ¼ÆËã¡£
-    detector = dlib.get_frontal_face_detector() #»ñÈ¡ÈËÁ³·ÖÀàÆ÷for face detection
+#æ ‘è“æ´¾çš„è¿è¡Œå†…å­˜æœ‰é™ï¼Œæ‰€ä»¥è¦å°†é‡‡é›†çš„å›¾ç‰‡åƒç´ ç¼©å°ä¸€äº›ï¼Œä¾¿äºè®¡ç®—ã€‚
+    detector = dlib.get_frontal_face_detector() #è·å–äººè„¸åˆ†ç±»å™¨for face detection
     cap = cv2.VideoCapture(0)  #Turn on the camera
     cap.set(3,640)
     cap.set(4,640)
 #initial boxes
-#³õÊ¼»¯¿òÁ³µÄ³õÊ¼Î»ÖÃ
+#åˆå§‹åŒ–æ¡†è„¸çš„åˆå§‹ä½ç½®
     box1 = mp.Array('i',[0,0,0,0])
     box2 = mp.Array('i',[0,0,0,0])
     
@@ -46,21 +49,21 @@ if __name__=='__main__':
     cv2.namedWindow('success', cv2.WINDOW_AUTOSIZE)
     cv2.moveWindow('success', 200, 200)
 #initial frames and processes
-#ÏëÒª¼¸¸ö½ø³Ì´¦ÀíÍ¼Æ¬¾ÍÓÃ¼¸×é£¬µ«²¢²»ÊÇÓÃµÄÔ½¶àÔ½ºÃ£¬
-#Ê÷İ®ÅÉµÄCPUÒ»¹²ÓĞ4¸öºË£¬È«²¿ÓÃÉÏ¿ÉÄÜ»áÓ°ÏìÆäËûµÄĞÔÄÜ£¬×Ô¼ºÊÔµÄÊ±ºò2¸ö»áºÃÒ»µã¡£
+#æƒ³è¦å‡ ä¸ªè¿›ç¨‹å¤„ç†å›¾ç‰‡å°±ç”¨å‡ ç»„ï¼Œä½†å¹¶ä¸æ˜¯ç”¨çš„è¶Šå¤šè¶Šå¥½ï¼Œ
+#æ ‘è“æ´¾çš„CPUä¸€å…±æœ‰4ä¸ªæ ¸ï¼Œå…¨éƒ¨ç”¨ä¸Šå¯èƒ½ä¼šå½±å“å…¶ä»–çš„æ€§èƒ½ï¼Œè‡ªå·±è¯•çš„æ—¶å€™2ä¸ªä¼šå¥½ä¸€ç‚¹ã€‚
     ret, frame11 = cap.read()
     img11 = cv2.resize(frame11,(160,160))
     res1 = mp.Process(target=detect_face,args=(img11,box1))
     res1.start()
-#¿ÉÒÔ°ÑÊ¶±ğÓÃµÄÍ¼Æ¬ÏñËØËõĞ¡£¬¿ÉÒÔ¼Ó¿ìËÙ¶È£¬Í¬Ê±Ò²¿ÉÒÔ¼õÉÙcpu¸ºµ££¬
-#È»ºóÔÙ°ÑÊ¶±ğ¿òÀ©´óÏàÓ¦±¶Êı£¬ÔÚÔ­Í¼Æ¬ÉÏ·Å³ö¡£
+#å¯ä»¥æŠŠè¯†åˆ«ç”¨çš„å›¾ç‰‡åƒç´ ç¼©å°ï¼Œå¯ä»¥åŠ å¿«é€Ÿåº¦ï¼ŒåŒæ—¶ä¹Ÿå¯ä»¥å‡å°‘cpuè´Ÿæ‹…ï¼Œ
+#ç„¶åå†æŠŠè¯†åˆ«æ¡†æ‰©å¤§ç›¸åº”å€æ•°ï¼Œåœ¨åŸå›¾ç‰‡ä¸Šæ”¾å‡ºã€‚
     ret, frame21 = cap.read()
     img21 = cv2.resize(frame21,(160,160))
     res2 = mp.Process(target=detect_face,args=(img21,box2))
     res2.start()
     while(cap.isOpened()):
 #process 1
- #Èç¹ûÏëÒªÖğÖ¡´¦Àí£¬ÄÇ¾ÍÓÃpass£¬Èç¹ûÏëÌøÖ¡¾ÍÑ¡ÔñÉÏÃæÁ½¾ä
+ #å¦‚æœæƒ³è¦é€å¸§å¤„ç†ï¼Œé‚£å°±ç”¨passï¼Œå¦‚æœæƒ³è·³å¸§å°±é€‰æ‹©ä¸Šé¢ä¸¤å¥
         if (res1.is_alive()):
             ret, frame12 = cap.read()
             cv2.imshow('success',draw_line(frame12,box1))            
@@ -82,7 +85,7 @@ if __name__=='__main__':
             res2 = mp.Process(target=detect_face,args=(img21,box2))
             res2.start()
 
-        if cv2.waitKey(1) & 0xFF == ord('q') or GPIO.input(26) == 0:  # ÅĞ¶Ï26ºÅGPIOµÄ×´Ì¬ÈôÎªµÍµçÆ½ÔòÍË³ö³ÌĞò£¬´Ó¶ø´ï³É±»Ö÷³ÌĞò¸ôÀë¿ØÖÆµÄÄ¿µÄ¡£
+        if cv2.waitKey(1) & 0xFF == ord('q') or GPIO.input(26) == 0:  # åˆ¤æ–­26å·GPIOçš„çŠ¶æ€è‹¥ä¸ºä½ç”µå¹³åˆ™é€€å‡ºç¨‹åºï¼Œä»è€Œè¾¾æˆè¢«ä¸»ç¨‹åºéš”ç¦»æ§åˆ¶çš„ç›®çš„ã€‚
             Break
 
     cv2.destroyAllWindows()
