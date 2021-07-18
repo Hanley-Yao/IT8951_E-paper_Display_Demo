@@ -1,8 +1,12 @@
 # :(这是一个出自高一学生之手的垃圾项目
 
-###### 别问我为啥把所有代码写一个文件里面...因为我不会分开写...别骂我
+**我只是一个高中生，如果有侵权的地方请一定告知删除...！！！**
 
-[[IT8951_E-paper_Display_Demo](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo)]是一个高一学生无聊闲着蛋疼整出来的没用玩意，可使用树莓派+IT8951实现一些没用的功能。
+**I am just a high school student, if there is infringement of the place, please be sure to inform delete...!!!**
+
+**E-mail ：2116893813@QQ.COM**
+
+[[IT8951_E-paper_Display_Demo](https://github.com/Yellow-feces/IT8951_E-paper_Display_Demo)]是无聊闲着蛋疼整出来的没用玩意，可使用树莓派+IT8951实现一些没用的功能。
 
 * 使用Pyhon编写
 
@@ -351,6 +355,8 @@ exit 0
 ### 6.主程序
 
 本项目的主程序通过Python3编写
+
+###### 别问我为啥把所有代码写一个文件里面...因为我不会分开写...别骂我
 
 源代码`test/test.py`
 
