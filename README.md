@@ -1,8 +1,8 @@
 # :(这是一个出自高一学生之手的垃圾项目
 
-**我只是一个高中生，如果有侵权的地方请一定告知删除...！！！**
+**我只是一个高中生，项目源码大部分来源于网络改变整理而成，如果有侵权的地方请一定告知删除...！！！**
 
-**I am just a high school student, if there is infringement of the place, please be sure to inform delete...!!!**
+**I am just a high school student. Most of the source code of the project comes from the network. If there is any infringement, please be sure to inform me to delete it...!!!**
 
 **E-mail ：2116893813@QQ.COM**
 
