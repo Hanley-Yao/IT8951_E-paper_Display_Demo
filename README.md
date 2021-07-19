@@ -431,9 +431,14 @@ multiprocessing
 ## 本项目依赖以及类似的项目：
 
 
-- [GregDMeyer](https://github.com/GregDMeyer/IT8951) - 这是我项目驱动屏幕的核心
-- [claudiodangelis](https://github.com/claudiodangelis/qrcp) - 我的项目接收图片的核心
-- [waveshare](https://github.com/waveshare/IT8951) - 微雪C语言例程
+- [GregDMeyer/IT8951](https://github.com/GregDMeyer/IT8951) - 这是我项目驱动屏幕的核心。
+- [claudiodangelis/qrcp](https://github.com/claudiodangelis/qrcp) - 我的项目接收图片的核心。
+- [waveshare/IT8951](https://github.com/waveshare/IT8951) - 微雪C语言例程。
+- [Seagate/it8951](https://github.com/Seagate/it8951) - 用于与IT8951控制器工作的实用程序(包括转储和刷新固件)。
+- [~martijnbraam/it8951](https://git.sr.ht/~martijnbraam/it8951) - USB接口的C库和实用程序。
+- [julbouln/ tinydrm_it8951](https://github.com/julbouln/tinydrm_it8951) - SPI/Raspberry Pi接口的Tinydrm驱动程序。
+- [joukos / PaperTTY](https://github.com/joukos/PaperTTY) - Python库与TTY和VNC SPI/Raspberry Pi接口。
+
 
 ## License
 
