@@ -98,13 +98,9 @@
 
 由于EPD显示原理的特殊性。**局部的温度差异**会导致**显示效果局部改变**影响观感，为此本项目选用硅酸铝陶瓷纤维隔热片双面覆盖铜箔。其能很好的隔绝树莓派在运行时产生的热量，使得屏幕表面任何区域的温度都基本一致，最大限度保证了显示效果。
 
-
-
 ## 模块接线图:
 
-目标文件`附件/线路连接图`
-
-
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5%E5%9B%BE/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5.png)
 
 ## 构建Demo运行环境：
 
@@ -360,7 +356,19 @@ exit 0
 
 源代码`test/test.py`
 
-流程图`附件/程序流程图`
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_1.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_2.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_3.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_4.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_5.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_6.png)
+
+![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_7.png)
 
 **注**：此程序将屏幕控制与应用功能结合，对于驱动电子墨水屏幕需要采用开源驱动
 
@@ -391,6 +399,8 @@ display.[刷新模式](constants.DisplayModes[波形模式])
 
 #  将图像缓冲区的图像以定义的模式输出到屏幕
 ```
+
+
 
 #### 还要一堆依赖库自己看着办咋装吧...反正我觉得挺折腾人的QAQ
 
