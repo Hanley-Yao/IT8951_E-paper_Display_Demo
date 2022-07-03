@@ -100,7 +100,7 @@
 
 ## 模块接线图:
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5%E5%9B%BE/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5%E5%9B%BE/%E7%BA%BF%E8%B7%AF%E8%BF%9E%E6%8E%A5.png)
 
 ## 构建Demo运行环境：
 
@@ -356,19 +356,19 @@ exit 0
 
 源代码`test/test.py`
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_1.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_1.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_2.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_2.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_3.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_3.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_4.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_4.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_5.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_5.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_6.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_6.png)
 
-![image](https://github.com/Hanley-Yao/IT8951_E-paper_Display_Demo/blob/master/%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_7.png)
+![image](./%E9%99%84%E4%BB%B6/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE/%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%88%86%E9%A1%B5_%E9%A1%B5%E9%9D%A2_7.png)
 
 **注**：此程序将屏幕控制与应用功能结合，对于驱动电子墨水屏幕需要采用开源驱动
 
